@@ -10,22 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Aquatoria
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Window3.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window3 : Window
     {
-        public MainWindow()
+        public Window3()
         {
             InitializeComponent();
-            Window1 adm = new Window1();
-            adm.Show();
-            this.Close();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

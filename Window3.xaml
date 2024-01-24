@@ -1,0 +1,36 @@
+﻿<Window x:Class="Aquatoria.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aquatoria"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="199*"/>
+        </Grid.RowDefinitions>
+        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="Создание заказа" FontWeight="Bold" FontSize="25" VerticalAlignment="Center" Width="232" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,93,0,0" Grid.Row="1" TextWrapping="Wrap" Text="№" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,121,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Услуги" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,160,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Сумма" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,199,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Оплата" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Дата" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="340,95,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="Yslugi_Box" HorizontalAlignment="Center" Margin="0,119,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Summa_Box" HorizontalAlignment="Center" Margin="0,158,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Margin="340,199,340,183" Grid.Row="1">
+            <ComboBoxItem x:Name="QR">
+                <TextBlock>QR</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem x:Name="Card">
+                <TextBlock>Картой</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem x:Name="Nalishka">
+                <TextBlock>Наличка</TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="Data_Box" HorizontalAlignment="Center" Margin="0,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
