@@ -10,22 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Aquatoria
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для CreateAccountWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CreateAccountWindow : Window
     {
-        public MainWindow()
+        public CreateAccountWindow()
         {
             InitializeComponent();
-            AdminWindow  adm = new AdminWindow();
-            adm.Show();
-            this.Close(); 
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

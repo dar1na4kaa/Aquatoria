@@ -10,22 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Aquatoria
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для EmployeeStatisticWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EmployeeStatisticWindow : Window
     {
-        public MainWindow()
+        
+        public EmployeeStatisticWindow()
         {
             InitializeComponent();
-            AdminWindow  adm = new AdminWindow();
-            adm.Show();
-            this.Close(); 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
